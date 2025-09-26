@@ -20,6 +20,7 @@ This project models the dynamics of a flapping wing, applies different control s
 
 ## 📂 Project Structure
 
+```bash
 flapping-wing-microbot/
 │
 ├── src/ # Source code
@@ -36,7 +37,7 @@ flapping-wing-microbot/
 └── README.md # Project description
 
 
----
+```
 
 ## ▶️ Usage
 
