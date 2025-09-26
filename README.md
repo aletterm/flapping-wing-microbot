@@ -45,6 +45,7 @@ Run the main simulation:
 
 ```bash
 python -m src.main
+```
 This will generate three plots:
 
 Free oscillation (no control)
