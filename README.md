@@ -23,7 +23,7 @@ This project models the dynamics of a flapping wing, applies different control s
 ```bash
 flapping-wing-microbot/
 │
-├── src/ # Source code
+├── src/ 
 │ ├── dynamics.py # Equations of motion
 │ ├── control.py # Controllers (zero, sinusoidal, PID)
 │ ├── simulation.py # Simulation runner
@@ -31,8 +31,6 @@ flapping-wing-microbot/
 │ └── main.py # Main entry point
 │
 ├── tests/ # Unit tests (pytest)
-├── docs/ # Documentation + figures
-├── notebooks/ # (optional) Jupyter demos
 ├── requirements.txt # Dependencies
 └── README.md # Project description
 
