@@ -6,7 +6,7 @@ from .visualization import plot_results, animate_bar
 from .control import zero_control, sinus_control, PID
 
 if __name__ == "__main__":
-    params = {"I": 1e-3, "k": 1e-1, "c": 1e-3}
+    params = {"I": 1e-3, "k": 1e-1, "c": 2e-3}
 
     # Oscillation libre
     t, y = run_simulation(
