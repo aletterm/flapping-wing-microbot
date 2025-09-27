@@ -54,3 +54,20 @@ The wing is driven by a sinusoidal torque, producing regular flapping motion.
 
 PID control (stabilization at target angle)
 A PID controller stabilizes the wing around a given reference angle.
+
+## Testing
+
+This project uses **pytest** for unit testing.  
+All test files are located in the `tests/` directory.
+
+### Test coverage
+- `test_dynamics.py` : verifies the equations of motion implemented in `dynamics.py`.
+- `test_control.py` : checks the behavior of the controllers (Zero, Sinusoidal, PID).
+- `test_simulation.py` : ensures that simulations run correctly and return valid trajectory data.
+- `test_visualization.py` : validates that plotting and animation functions run without errors (note: these tests usually check function calls, not the visual output).
+
+### Running the tests
+From the root of the repository:
+
+```bash
+python -m pytest -v
