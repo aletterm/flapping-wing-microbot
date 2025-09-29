@@ -71,3 +71,21 @@ From the root of the repository:
 
 ```bash
 python -m pytest -v
+
+## Diagrammes du projet
+
+### Structure des classes
+![Diagramme des classes](docs/classes_microbot.png)
+
+### Dépendances des modules
+![Diagramme des packages](docs/packages_microbot.png)
+
+---
+
+### Schéma fonctionnel du système
+```mermaid
+graph LR
+    Controller[PID Controller] --> Actuator[Flapping Wing Actuator]
+    Actuator --> Dynamics[Robot Dynamics]
+    Dynamics --> Sensor[Angle/Position Sensor]
+    Sensor --> Controller
