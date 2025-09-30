@@ -37,9 +37,9 @@ def run_simulation(params, control_func, t_max=0.1, y0=None):
         y0,
         args=(params, control_func),
         dense_output=True,
-        max_step=1e-4
+        max_step=1e-2
     )
 
-    t = np.linspace(t_span[0], t_span[1], 2000)
+    t = np.linspace(t_span[0], t_span[1], 100)
     y = sol.sol(t)
     return t, y
